@@ -25,7 +25,7 @@ class MakeupApp extends Component {
         const makeupList = new MakeupList({ makeups: [] });
         listSection.appendChild(makeupList.renderDOM());
 
-        const loadMakeup = async () => {
+        const loadMakeup = async() => {
             try {
                 const makeups = await getMakeups();
 

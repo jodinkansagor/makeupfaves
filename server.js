@@ -44,7 +44,7 @@ app.use('/api', ensureAuth);
 
 //**API ROUTES ***
 
-app.get('/api/makeups', async (req, res) => {
+app.get('/api/makeups', async(req, res) => {
 
     try {
         const query = req.query;
@@ -54,7 +54,7 @@ app.get('/api/makeups', async (req, res) => {
 
         //so much more needs to happen in here with the faves. come back to this.
 
-        res.json(makeups)
+        res.json(makeups);
     }
 
     catch (err) {
@@ -70,5 +70,5 @@ app.get('/api/makeups', async (req, res) => {
 
 //start server
 app.listen(PORT, () => {
-    console.log('server runnong on PORT', PORT)
+    console.log('server runnong on PORT', PORT);
 });

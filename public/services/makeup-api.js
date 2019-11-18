@@ -40,3 +40,49 @@ export function getMakeups() {
     return fetchWithError(url);
 }
 
+export function getFavorites() {
+    const url = `${BASE_URL}/me/favorites`;
+    return fetchWithError(url);
+}
+
+export function makeFavorites(makeup) {
+    const url = `${BASE_URL}/me/favorites`;
+    return fetchWithError(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(makeup)
+    });
+}
+
+export function unFavorite(makeupId) {
+    const url = `${BASE_URL}/me/favorites/${makeupId}`;
+    return fetchWithError(url, {
+        method: 'DELETE'
+    });
+}
+
+export function signUp(user) {
+    const url = `${BASE_URL}/auth/signup`;
+    return fetchWithError(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(user)
+    });
+}
+
+export function signIn(credentials) {
+    const url = `${BASE_URL}/auth/signin`;
+    return fetchWithError(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(credentials)
+    });
+}
+ 
+
