@@ -45,7 +45,7 @@ export function getFavorites() {
     return fetchWithError(url);
 }
 
-export function makeFavorites(makeup) {
+export function makeFavorite(makeup) {
     const url = `${BASE_URL}/me/favorites`;
     return fetchWithError(url, {
         method: 'POST',

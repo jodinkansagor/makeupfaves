@@ -1,5 +1,5 @@
-import Component from '../../Component.js';
-import MakeupItem from './MakeupItem.js.js';
+import Component from '../Component.js';
+import MakeupItem from './MakeupItem.js';
 
 class MakeupList extends Component {
 

@@ -1,6 +1,6 @@
-import Component from '../../Component.js';
+import Component from '../Component.js';
 //the following are links to fetch calls
-import { makeFavorite, unFavorite } from '../services/quote-api.js';
+import { makeFavorite, unFavorite } from '../services/makeup-api.js';
 
 class MakeupItem extends Component {
 

@@ -1,7 +1,7 @@
-import Component from '../../Component.js';
+import Component from '../Component.js';
 import Header from '../common/Header.js';
 // import Loading from '../common/Loading.js';
-import MakeupList from './makeup/MakeupList.js.js';
+import MakeupList from './MakeupList.js';
 import { getMakeups } from '../services/makeup-api.js';
 
 class MakeupApp extends Component {
@@ -14,9 +14,9 @@ class MakeupApp extends Component {
 
         //get your main and error set up
         //will add Search and Paging here as well
-        const main = dom.querySelector('main');
-        const error = dom.querySelector('.error');
-        error.prependChild(main);
+        // const main = dom.querySelector('main');
+        // const error = dom.querySelector('.error');
+        // error.prependChild(main.renderDOM());
 
         //will add loading here
 

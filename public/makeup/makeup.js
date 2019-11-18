@@ -1,4 +1,4 @@
-import MakeupApp from './MakupApp.js';
+import MakeupApp from './MakeupApp.js';
 
 const app = new MakeupApp();
 document.body.prepend(app.renderDOM());

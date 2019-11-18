@@ -1,4 +1,4 @@
-import Component from '../../Component.js';
+import Component from '../Component.js';
 
 class Header extends Component {
     renderHTML() {
@@ -6,7 +6,7 @@ class Header extends Component {
 
         return /*html*/ `
             <header>
-                <img class = "logo" src="https://placebear/100/100" alt="make up logo">
+                <img class = "logo" src="https://placebear.com/100/100" alt="make up logo">
                 <h1>${title}</h1>
                 <nav>
                     <a href="./">Home</a>
